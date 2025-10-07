@@ -1,6 +1,5 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import Header from "@/components/Header";
 
 // 한글 전용 Pretendard GOV Variable
 const pretendardGOV = localFont({
@@ -22,10 +21,7 @@ export default function RootLayout({ children }) {
       className={`${pretendardGOV.variable} ${pretendardStd.variable}`}
     >
       <body>
-        <Header />
-        <main className="px-4">
-          <div className="max-w-300 mx-auto mt-6">{children}</div>
-        </main>
+        {children}
       </body>
     </html>
   );

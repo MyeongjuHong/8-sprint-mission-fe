@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import BoardItem from "./BoardItem";
-import Button from "@/app/components/Button";
+import Button from "@/components/Button";
 import Link from "next/link";
 import { API_BASE_URL } from "@/lib/api";
 
